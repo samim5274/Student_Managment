@@ -1,0 +1,28 @@
+C:\Users\Abdullah  IT  Zone\Desktop\StudentInfo\StudentInfo\bin\Debug\StudentInfo.exe
+C:\Users\Abdullah  IT  Zone\Desktop\StudentInfo\StudentInfo\bin\Debug\StudentInfo.pdb
+C:\Users\Abdullah  IT  Zone\Desktop\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.Properties.Resources.resources
+C:\Users\Abdullah  IT  Zone\Desktop\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.csproj.GenerateResource.Cache
+C:\Users\Abdullah  IT  Zone\Desktop\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.exe
+C:\Users\Abdullah  IT  Zone\Desktop\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.pdb
+C:\Users\Abdullah  IT  Zone\Desktop\StudentInfo\StudentInfo\bin\Debug\StudentInfo.exe.config
+C:\Users\Abdullah  IT  Zone\Desktop\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.AddStudent.resources
+C:\Users\Abdullah  IT  Zone\Desktop\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.MotherForm.resources
+C:\Users\Abdullah  IT  Zone\Desktop\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.csprojResolveAssemblyReference.cache
+E:\Softwer Devolopment\StudentInfo\StudentInfo\bin\Debug\StudentInfo.exe.config
+E:\Softwer Devolopment\StudentInfo\StudentInfo\obj\x86\Debug\Interop.AccessibilityCplAdminLib.dll
+E:\Softwer Devolopment\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.csproj.ResolveComReference.cache
+E:\Softwer Devolopment\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.csprojResolveAssemblyReference.cache
+E:\Softwer Devolopment\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.btnDelete.resources
+E:\Softwer Devolopment\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.CreateUserform.resources
+E:\Softwer Devolopment\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.DepartmentForm.resources
+E:\Softwer Devolopment\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.Department_Wise_Student_Info.resources
+E:\Softwer Devolopment\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.LoginForm.resources
+E:\Softwer Devolopment\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.MotherForm.resources
+E:\Softwer Devolopment\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.Properties.Resources.resources
+E:\Softwer Devolopment\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.ReportViewer.resources
+E:\Softwer Devolopment\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.csproj.GenerateResource.Cache
+E:\Softwer Devolopment\StudentInfo\StudentInfo\bin\Debug\StudentInfo.exe
+E:\Softwer Devolopment\StudentInfo\StudentInfo\bin\Debug\StudentInfo.pdb
+E:\Softwer Devolopment\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.exe
+E:\Softwer Devolopment\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.pdb
+E:\Softwer Devolopment\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.DeparmentWiseReportForm.resources

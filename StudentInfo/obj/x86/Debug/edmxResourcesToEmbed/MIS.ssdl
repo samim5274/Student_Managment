@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MISModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="MISModelStoreContainer">
+    <EntitySet Name="DepartmentInfo" EntityType="MISModel.Store.DepartmentInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GenderId" EntityType="MISModel.Store.GenderId" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LoginInfo" EntityType="MISModel.Store.LoginInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SemesterInfo" EntityType="MISModel.Store.SemesterInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ShiftInfo" EntityType="MISModel.Store.ShiftInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="StudentInfo" EntityType="MISModel.Store.StudentInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="MISModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_StudentInfo_DepartmentInfo" Association="MISModel.Store.FK_StudentInfo_DepartmentInfo">
+      <End Role="DepartmentInfo" EntitySet="DepartmentInfo" />
+      <End Role="StudentInfo" EntitySet="StudentInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StudentInfo_SemesterInfo" Association="MISModel.Store.FK_StudentInfo_SemesterInfo">
+      <End Role="SemesterInfo" EntitySet="SemesterInfo" />
+      <End Role="StudentInfo" EntitySet="StudentInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StudentInfo_ShiftInfo" Association="MISModel.Store.FK_StudentInfo_ShiftInfo">
+      <End Role="ShiftInfo" EntitySet="ShiftInfo" />
+      <End Role="StudentInfo" EntitySet="StudentInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StudentInfo2_GenderId" Association="MISModel.Store.FK_StudentInfo2_GenderId">
+      <End Role="GenderId" EntitySet="GenderId" />
+      <End Role="StudentInfo" EntitySet="StudentInfo" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="DepartmentInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="DepartmentName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="GenderId">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Type" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="LoginInfo">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SemesterInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Semester" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ShiftInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="ShiftType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="StudentInfo">
+    <Key>
+      <PropertyRef Name="StudentId" />
+    </Key>
+    <Property Name="StudentId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="99" />
+    <Property Name="SemesterId" Type="int" />
+    <Property Name="ShiftId" Type="int" />
+    <Property Name="Adress" Type="varchar" MaxLength="99" />
+    <Property Name="GenderId" Type="int" />
+    <Property Name="Age" Type="int" />
+    <Property Name="Contact" Type="int" />
+    <Property Name="Session" Type="varchar" MaxLength="50" />
+    <Property Name="DateofBirth" Type="date" />
+    <Property Name="DepId" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_StudentInfo_DepartmentInfo">
+    <End Role="DepartmentInfo" Type="MISModel.Store.DepartmentInfo" Multiplicity="0..1" />
+    <End Role="StudentInfo" Type="MISModel.Store.StudentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DepartmentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StudentInfo">
+        <PropertyRef Name="DepId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StudentInfo_SemesterInfo">
+    <End Role="SemesterInfo" Type="MISModel.Store.SemesterInfo" Multiplicity="0..1" />
+    <End Role="StudentInfo" Type="MISModel.Store.StudentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SemesterInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StudentInfo">
+        <PropertyRef Name="SemesterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StudentInfo_ShiftInfo">
+    <End Role="ShiftInfo" Type="MISModel.Store.ShiftInfo" Multiplicity="0..1" />
+    <End Role="StudentInfo" Type="MISModel.Store.StudentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShiftInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StudentInfo">
+        <PropertyRef Name="ShiftId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StudentInfo2_GenderId">
+    <End Role="GenderId" Type="MISModel.Store.GenderId" Multiplicity="0..1" />
+    <End Role="StudentInfo" Type="MISModel.Store.StudentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GenderId">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="StudentInfo">
+        <PropertyRef Name="GenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="SP_DATEOFBIRTHWISESTUDENTINFO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SDATE" Type="date" Mode="In" />
+    <Parameter Name="EDATE" Type="date" Mode="In" />
+    <Parameter Name="ROLL" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_DepartmentWiseStudentinfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StdId" Type="int" Mode="In" />
+    <Parameter Name="Did" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_GRIDVIEWDISPLAYS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+</Schema>

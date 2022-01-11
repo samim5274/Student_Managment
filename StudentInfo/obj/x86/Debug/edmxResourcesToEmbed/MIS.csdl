@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MISModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="MISEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="SP_GRIDVIEWDISPLAY" ReturnType="Collection(MISModel.SP_GRIDVIEWDISPLAY_Result)" />
+    <FunctionImport Name="SP_GRIDVIEWDISPLAYS" ReturnType="Collection(MISModel.SP_GRIDVIEWDISPLAYS_Result)" />
+    <FunctionImport Name="SP_DepartmentWiseStudentinfo" ReturnType="Collection(MISModel.SP_DepartmentWiseStudentinfo_Result)">
+      <Parameter Name="StdId" Mode="In" Type="Int32" />
+      <Parameter Name="Did" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="DepartmentInfoes" EntityType="MISModel.DepartmentInfo" />
+    <EntitySet Name="GenderIds" EntityType="MISModel.GenderId" />
+    <EntitySet Name="LoginInfoes" EntityType="MISModel.LoginInfo" />
+    <EntitySet Name="SemesterInfoes" EntityType="MISModel.SemesterInfo" />
+    <EntitySet Name="ShiftInfoes" EntityType="MISModel.ShiftInfo" />
+    <EntitySet Name="StudentInfoes" EntityType="MISModel.StudentInfo" />
+    <EntitySet Name="sysdiagrams" EntityType="MISModel.sysdiagram" />
+    <AssociationSet Name="FK_StudentInfo_DepartmentInfo" Association="MISModel.FK_StudentInfo_DepartmentInfo">
+      <End Role="DepartmentInfo" EntitySet="DepartmentInfoes" />
+      <End Role="StudentInfo" EntitySet="StudentInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StudentInfo2_GenderId" Association="MISModel.FK_StudentInfo2_GenderId">
+      <End Role="GenderId" EntitySet="GenderIds" />
+      <End Role="StudentInfo" EntitySet="StudentInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StudentInfo_SemesterInfo" Association="MISModel.FK_StudentInfo_SemesterInfo">
+      <End Role="SemesterInfo" EntitySet="SemesterInfoes" />
+      <End Role="StudentInfo" EntitySet="StudentInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StudentInfo_ShiftInfo" Association="MISModel.FK_StudentInfo_ShiftInfo">
+      <End Role="ShiftInfo" EntitySet="ShiftInfoes" />
+      <End Role="StudentInfo" EntitySet="StudentInfoes" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="SP_GRIDVIEWDISPLAY_Result">
+    <Property Type="Int32" Name="RollNo" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="99" />
+    <Property Type="String" Name="DepartmentName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Semester" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Shift" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="GendarType" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Adress" Nullable="true" MaxLength="99" />
+    <Property Type="Int32" Name="Age" Nullable="true" />
+    <Property Type="DateTime" Name="DateofBirth" Nullable="true" />
+    <Property Type="Int32" Name="Contact" Nullable="true" />
+    <Property Type="String" Name="Session" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="SP_GRIDVIEWDISPLAYS_Result">
+    <Property Type="Int32" Name="RollNo" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="99" />
+    <Property Type="String" Name="DepartmentName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Semester" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Shift" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="GendarType" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Adress" Nullable="true" MaxLength="99" />
+    <Property Type="Int32" Name="Age" Nullable="true" />
+    <Property Type="DateTime" Name="DateofBirth" Nullable="true" />
+    <Property Type="Int32" Name="Contact" Nullable="true" />
+    <Property Type="String" Name="Session" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="SP_DepartmentWiseStudentinfo_Result">
+    <Property Type="Int32" Name="RollNo" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="99" />
+    <Property Type="String" Name="DepartmentName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Semester" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Shift" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="GendarType" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Adress" Nullable="true" MaxLength="99" />
+    <Property Type="Int32" Name="Age" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="DepartmentInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="DepartmentName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="StudentInfoes" Relationship="MISModel.FK_StudentInfo_DepartmentInfo" FromRole="DepartmentInfo" ToRole="StudentInfo" />
+  </EntityType>
+  <EntityType Name="GenderId">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Type" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="StudentInfoes" Relationship="MISModel.FK_StudentInfo2_GenderId" FromRole="GenderId" ToRole="StudentInfo" />
+  </EntityType>
+  <EntityType Name="LoginInfo">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SemesterInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Semester" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="StudentInfoes" Relationship="MISModel.FK_StudentInfo_SemesterInfo" FromRole="SemesterInfo" ToRole="StudentInfo" />
+  </EntityType>
+  <EntityType Name="ShiftInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="ShiftType" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="StudentInfoes" Relationship="MISModel.FK_StudentInfo_ShiftInfo" FromRole="ShiftInfo" ToRole="StudentInfo" />
+  </EntityType>
+  <EntityType Name="StudentInfo">
+    <Key>
+      <PropertyRef Name="StudentId" />
+    </Key>
+    <Property Type="Int32" Name="StudentId" Nullable="false" />
+    <Property Type="String" Name="Name" MaxLength="99" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="SemesterId" />
+    <Property Type="Int32" Name="ShiftId" />
+    <Property Type="String" Name="Adress" MaxLength="99" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="GenderId" />
+    <Property Type="Int32" Name="Age" />
+    <Property Type="Int32" Name="Contact" />
+    <Property Type="String" Name="Session" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DateofBirth" />
+    <Property Type="Int32" Name="DepId" />
+    <NavigationProperty Name="DepartmentInfo" Relationship="MISModel.FK_StudentInfo_DepartmentInfo" FromRole="StudentInfo" ToRole="DepartmentInfo" />
+    <NavigationProperty Name="GenderId1" Relationship="MISModel.FK_StudentInfo2_GenderId" FromRole="StudentInfo" ToRole="GenderId" />
+    <NavigationProperty Name="SemesterInfo" Relationship="MISModel.FK_StudentInfo_SemesterInfo" FromRole="StudentInfo" ToRole="SemesterInfo" />
+    <NavigationProperty Name="ShiftInfo" Relationship="MISModel.FK_StudentInfo_ShiftInfo" FromRole="StudentInfo" ToRole="ShiftInfo" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="principal_id" Nullable="false" />
+    <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="version" />
+    <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_StudentInfo_DepartmentInfo">
+    <End Type="MISModel.DepartmentInfo" Role="DepartmentInfo" Multiplicity="0..1" />
+    <End Type="MISModel.StudentInfo" Role="StudentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DepartmentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StudentInfo">
+        <PropertyRef Name="DepId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StudentInfo2_GenderId">
+    <End Type="MISModel.GenderId" Role="GenderId" Multiplicity="0..1" />
+    <End Type="MISModel.StudentInfo" Role="StudentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GenderId">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="StudentInfo">
+        <PropertyRef Name="GenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StudentInfo_SemesterInfo">
+    <End Type="MISModel.SemesterInfo" Role="SemesterInfo" Multiplicity="0..1" />
+    <End Type="MISModel.StudentInfo" Role="StudentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SemesterInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StudentInfo">
+        <PropertyRef Name="SemesterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StudentInfo_ShiftInfo">
+    <End Type="MISModel.ShiftInfo" Role="ShiftInfo" Multiplicity="0..1" />
+    <End Type="MISModel.StudentInfo" Role="StudentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShiftInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StudentInfo">
+        <PropertyRef Name="ShiftId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

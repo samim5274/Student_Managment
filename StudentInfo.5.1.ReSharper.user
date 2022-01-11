@@ -1,0 +1,374 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="DCA094B5-3FF5-442D-9DDE-0F872A5873F6/f:Program.cs" caret="480" fromTop="17" />
+      <File id="DCA094B5-3FF5-442D-9DDE-0F872A5873F6/f:StudentManager.cs" caret="393" fromTop="15" />
+      <File id="DCA094B5-3FF5-442D-9DDE-0F872A5873F6/f:DeparmentWiseReportForm.cs" caret="1011" fromTop="26" />
+      <File id="DCA094B5-3FF5-442D-9DDE-0F872A5873F6/f:Department_Wise_Student_Info.cs" caret="1114" fromTop="20" />
+      <File id="DCA094B5-3FF5-442D-9DDE-0F872A5873F6/f:AddStudent.cs" caret="5031" fromTop="20" />
+      <File id="DCA094B5-3FF5-442D-9DDE-0F872A5873F6/f:LoginForm.cs" caret="773" fromTop="3" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="DCA094B5-3FF5-442D-9DDE-0F872A5873F6/f:Program.cs" caret="480" fromTop="17" />
+      <File id="DCA094B5-3FF5-442D-9DDE-0F872A5873F6/f:DeparmentWiseReportForm.cs" caret="860" fromTop="13" />
+      <File id="DCA094B5-3FF5-442D-9DDE-0F872A5873F6/f:DeparmentWiseReportForm.cs" caret="671" fromTop="10" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="MotherForm`0" priority="2" />
+      <Item value="var" priority="52" />
+      <Item value="new" priority="44" />
+      <Item value="AddStudent`0" priority="0" />
+      <Item value="obj" priority="11" />
+      <Item value="public" priority="7" />
+      <Item value="MISEntities`0" priority="11" />
+      <Item value="StudentInfo`0" priority="2" />
+      <Item value="objstudent" priority="10" />
+      <Item value="txtId" priority="6" />
+      <Item value="Convert`0" priority="14" />
+      <Item value="txtName" priority="5" />
+      <Item value="txtAge" priority="3" />
+      <Item value="txtAdress" priority="2" />
+      <Item value="txtSession" priority="2" />
+      <Item value="txtContact" priority="2" />
+      <Item value="dtpBirthDay" priority="3" />
+      <Item value="DateTime`0" priority="0" />
+      <Item value="StudentManager`0" priority="5" />
+      <Item value="List" priority="7" />
+      <Item value="DepartmentInfo`0" priority="8" />
+      <Item value="from" priority="6" />
+      <Item value="select" priority="1" />
+      <Item value="dp" priority="0" />
+      <Item value="context" priority="6" />
+      <Item value="dep" priority="0" />
+      <Item value="return" priority="4" />
+      <Item value="q" priority="3" />
+      <Item value="cbxDepartment" priority="9" />
+      <Item value="GenderId`0" priority="0" />
+      <Item value="cbxSex" priority="3" />
+      <Item value="cbxShift" priority="2" />
+      <Item value="ShiftInfo`0" priority="0" />
+      <Item value="cbxSemester" priority="3" />
+      <Item value="SemesterInfo`0" priority="0" />
+      <Item value="Focus`0" priority="0" />
+      <Item value="misobj" priority="3" />
+      <Item value="MessageBox`0" priority="16" />
+      <Item value="datagridstdudentinfo" priority="1" />
+      <Item value="SP_GRIDVIEWDISPLAY_Result`0" priority="4" />
+      <Item value="object" priority="0" />
+      <Item value="list" priority="8" />
+      <Item value="StudentInfo" priority="0" />
+      <Item value="XmlReadMode`0" priority="1" />
+      <Item value="x" priority="2" />
+      <Item value="int" priority="8" />
+      <Item value="this" priority="1" />
+      <Item value="misObj" priority="9" />
+      <Item value="std" priority="21" />
+      <Item value="txtSearchId" priority="1" />
+      <Item value="FillGrid`0" priority="1" />
+      <Item value="string" priority="13" />
+      <Item value="null" priority="1" />
+      <Item value="DepartmentForm`0" priority="0" />
+      <Item value="d" priority="4" />
+      <Item value="txtDid" priority="1" />
+      <Item value="m" priority="8" />
+      <Item value="mngr" priority="1" />
+      <Item value="DepartmentGrid" priority="15" />
+      <Item value="Department_Wise_Student_Info`0" priority="0" />
+      <Item value="txtStudentId" priority="1" />
+      <Item value="mnr" priority="0" />
+      <Item value="SP_DepartmentWiseStudentinfo_Result`0" priority="1" />
+      <Item value="studntId" priority="0" />
+      <Item value="DepId" priority="0" />
+      <Item value="sId" priority="0" />
+      <Item value="dId" priority="0" />
+      <Item value="smnr" priority="0" />
+      <Item value="dlist" priority="2" />
+      <Item value="try" priority="5" />
+      <Item value="ex" priority="3" />
+      <Item value="Exception" priority="1" />
+      <Item value="finally" priority="0" />
+      <Item value="e" priority="4" />
+      <Item value="comboBox1" priority="0" />
+      <Item value="cbxAge" priority="5" />
+      <Item value="Message`0" priority="0" />
+      <Item value="MessageBoxIcon`0" priority="0" />
+      <Item value="Exception`0" priority="0" />
+      <Item value="exception" priority="3" />
+      <Item value="pdfPTable" priority="0" />
+      <Item value="Bitmap`0" priority="1" />
+      <Item value="bm" priority="2" />
+      <Item value="Rectangle" priority="0" />
+      <Item value="height" priority="0" />
+      <Item value="PrintPreviewDialog`0" priority="1" />
+      <Item value="private" priority="0" />
+      <Item value="void" priority="0" />
+      <Item value="printPreviewDialog1" priority="0" />
+      <Item value="IPagedList&lt;???&gt;" priority="0" />
+      <Item value="IPageList&lt;SP_DepartmentWiseStudentinfo_Result&gt;" priority="0" />
+      <Item value="printDocument1" priority="1" />
+      <Item value="using" priority="0" />
+      <Item value="System" priority="0" />
+      <Item value="DGVPrinterHelper" priority="0" />
+      <Item value="print" priority="8" />
+      <Item value="true" priority="0" />
+      <Item value="false" priority="1" />
+      <Item value="String`0" priority="0" />
+      <Item value="StringAlignment`0" priority="0" />
+      <Item value="User`0" priority="1" />
+      <Item value="ur" priority="0" />
+      <Item value="Text" priority="1" />
+      <Item value="UserCreate`0" priority="0" />
+      <Item value="us" priority="2" />
+      <Item value="txtUser" priority="2" />
+      <Item value="Login`0" priority="3" />
+      <Item value="lg" priority="2" />
+      <Item value="txtPass" priority="0" />
+      <Item value="CreateUserform`0" priority="0" />
+      <Item value="l" priority="7" />
+      <Item value="textBox1" priority="1" />
+      <Item value="textBox2" priority="1" />
+      <Item value="if" priority="4" />
+      <Item value="txtuserName" priority="6" />
+      <Item value="txtUserPassword" priority="5" />
+      <Item value="mis" priority="1" />
+      <Item value="ua" priority="0" />
+      <Item value="u" priority="0" />
+      <Item value="test" priority="2" />
+      <Item value="Equals`0" priority="0" />
+      <Item value="else" priority="2" />
+      <Item value="foreach" priority="0" />
+      <Item value="uwer" priority="1" />
+      <Item value="throw" priority="0" />
+      <Item value="break" priority="1" />
+      <Item value="LoginInfo`0" priority="1" />
+      <Item value="txtLogId" priority="0" />
+      <Item value="b" priority="0" />
+      <Item value="KeyPress" priority="0" />
+      <Item value="char" priority="0" />
+      <Item value="Keys`0" priority="0" />
+      <Item value="SearchDirectionHint`0" priority="0" />
+      <Item value="Search`0" priority="0" />
+      <Item value="StudentReport`0" priority="0" />
+      <Item value="rpt_StudentReport`0" priority="0" />
+      <Item value="rpt" priority="2" />
+      <Item value="stdId" priority="1" />
+      <Item value="did" priority="1" />
+      <Item value="ReportViewer`0" priority="0" />
+      <Item value="reportViewer" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StudentInfo.AddStudent">
+      <Item value="Show`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StudentInfo.StudentInfo">
+      <Item value="StudentId" priority="4" />
+      <Item value="Name" priority="2" />
+      <Item value="Age" priority="1" />
+      <Item value="Adress" priority="1" />
+      <Item value="Session" priority="1" />
+      <Item value="Contact" priority="1" />
+      <Item value="DateofBirth" priority="2" />
+      <Item value="SemesterId" priority="1" />
+      <Item value="DepId" priority="1" />
+      <Item value="ShiftId" priority="1" />
+      <Item value="GenderId" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="46" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Trim`0" priority="23" />
+      <Item value="ToString`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToInt32`0" priority="13" />
+      <Item value="ToDateTime`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DateTimePicker">
+      <Item value="Value" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StudentInfo.MISEntities">
+      <Item value="DepartmentInfoes" priority="0" />
+      <Item value="GenderIds" priority="0" />
+      <Item value="ShiftInfoes" priority="0" />
+      <Item value="SemesterInfoes" priority="0" />
+      <Item value="AddToStudentInfoes`0" priority="2" />
+      <Item value="SaveChanges`0" priority="10" />
+      <Item value="SP_GRIDVIEWDISPLAY`0" priority="1" />
+      <Item value="StudentInfoes" priority="3" />
+      <Item value="ObjectStateManager" priority="1" />
+      <Item value="AddObject`0" priority="0" />
+      <Item value="DeleteObject`0" priority="0" />
+      <Item value="AddToDepartmentInfoes`0" priority="0" />
+      <Item value="SP_DepartmentWiseStudentinfo`0" priority="3" />
+      <Item value="AddToUsers`0" priority="0" />
+      <Item value="AddToLogins`0" priority="1" />
+      <Item value="Logins" priority="2" />
+      <Item value="LoginInfoes" priority="5" />
+      <Item value="AddToLoginInfoes`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="ToList`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ComboBox">
+      <Item value="DisplayMember" priority="2" />
+      <Item value="ValueMember" priority="2" />
+      <Item value="DataSource" priority="1" />
+      <Item value="SelectedItem" priority="6" />
+      <Item value="SelectedText" priority="0" />
+      <Item value="Select`0" priority="0" />
+      <Item value="SelectedValue" priority="6" />
+      <Item value="Items" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
+      <Item value="Show`0" priority="16" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DataGridView">
+      <Item value="DataSource" priority="5" />
+      <Item value="Height" priority="4" />
+      <Item value="RowCount" priority="0" />
+      <Item value="RowTemplate" priority="0" />
+      <Item value="Width" priority="1" />
+      <Item value="DrawToBitmap`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectResult`1">
+      <Item value="ToList`1" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectSet`1">
+      <Item value="ToList`1" priority="2" />
+      <Item value="FirstOrDefault`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Where`1" priority="2" />
+      <Item value="FirstOrDefault`1" priority="0" />
+      <Item value="Add`0" priority="0" />
+      <Item value="AddRange`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="FirstOrDefault`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable`1">
+      <Item value="ToString`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="12" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StudentInfo.DepartmentForm">
+      <Item value="ShowDialog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StudentInfo.DepartmentInfo">
+      <Item value="Id" priority="1" />
+      <Item value="DepartmentName" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StudentInfo.StudentManager">
+      <Item value="GetAllStudentInformation`0" priority="1" />
+      <Item value="GetAllDepartment`0" priority="0" />
+      <Item value="GetDepartmentWiseStudent`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StudentInfo.Department_Wise_Student_Info">
+      <Item value="ShowDialog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ComboBox+ObjectCollection">
+      <Item value="Add`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBoxIcon">
+      <Item value="Error" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewRow">
+      <Item value="Height" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.PrintPreviewDialog">
+      <Item value="ShowDialog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Printing.PrintPageEventArgs">
+      <Item value="Graphics" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Graphics">
+      <Item value="DrawImage`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DGVPrinterHelper.DGVPrinter">
+      <Item value="Title" priority="0" />
+      <Item value="SubTitle" priority="0" />
+      <Item value="PageNumbers" priority="0" />
+      <Item value="PageNumberInHeader" priority="0" />
+      <Item value="PorportionalColumns" priority="0" />
+      <Item value="HeaderCellAlignment" priority="0" />
+      <Item value="Footer" priority="0" />
+      <Item value="FooterSpacing" priority="0" />
+      <Item value="PrintDataGridView`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.StringAlignment">
+      <Item value="Near" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StudentInfo.User">
+      <Item value="UserName" priority="1" />
+      <Item value="Password" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StudentInfo.UserCreate">
+      <Item value="ShowDialog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StudentInfo.Login">
+      <Item value="UserName" priority="7" />
+      <Item value="Password" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StudentInfo.MotherForm">
+      <Item value="ShowDialog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StudentInfo.LoginInfo">
+      <Item value="UserName" priority="0" />
+      <Item value="Password" priority="0" />
+      <Item value="LogId" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.KeyPressEventArgs">
+      <Item value="KeyChar" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.Keys">
+      <Item value="Escape" priority="0" />
+      <Item value="Enter" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StudentInfo.DeparmentWiseReportForm">
+      <Item value="ShowDialog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StudentInfo.rpt_StudentReport">
+      <Item value="SetParameterValue`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CrystalDecisions.Windows.Forms.CrystalReportViewer">
+      <Item value="Show`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
