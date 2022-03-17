@@ -26,3 +26,8 @@ E:\Softwer Devolopment\StudentInfo\StudentInfo\bin\Debug\StudentInfo.pdb
 E:\Softwer Devolopment\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.exe
 E:\Softwer Devolopment\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.pdb
 E:\Softwer Devolopment\StudentInfo\StudentInfo\obj\x86\Debug\StudentInfo.DeparmentWiseReportForm.resources
+E:\Softwer Devolopment\StudentInfo\Github\StudentInfo\bin\Debug\StudentInfo.exe.config
+E:\Softwer Devolopment\StudentInfo\Github\StudentInfo\obj\x86\Debug\Interop.AccessibilityCplAdminLib.dll
+E:\Softwer Devolopment\StudentInfo\Github\StudentInfo\obj\x86\Debug\StudentInfo.csproj.ResolveComReference.cache
+E:\Softwer Devolopment\StudentInfo\Github\StudentInfo\obj\x86\Debug\StudentInfo.exe
+E:\Softwer Devolopment\StudentInfo\Github\StudentInfo\obj\x86\Debug\StudentInfo.pdb
